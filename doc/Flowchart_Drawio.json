@@ -1,0 +1,28 @@
+{
+    "version": "1.0",
+    "elements": [
+        {"id": "1", "label": "启动 App", "type": "ellipse", "style": "filled", "fillColor": "lightblue"},
+        {"id": "2", "label": "任务列表界面", "type": "rectangle", "style": "rounded,filled", "fillColor": "lightyellow"},
+        {"id": "3", "label": "新增任务界面", "type": "rectangle", "style": "rounded,filled", "fillColor": "lightgreen"},
+        {"id": "4", "label": "任务详情页", "type": "rectangle", "style": "rounded,filled", "fillColor": "lightgreen"},
+        {"id": "5", "label": "复盘界面", "type": "rectangle", "style": "rounded,filled", "fillColor": "lightpink"},
+        {"id": "6", "label": "保存任务", "type": "diamond", "style": "filled", "fillColor": "lightgrey"},
+        {"id": "7", "label": "编辑任务", "type": "diamond", "style": "filled", "fillColor": "lightgrey"},
+        {"id": "8", "label": "标记为已完成", "type": "diamond", "style": "filled", "fillColor": "lightgrey"},
+        {"id": "9", "label": "删除任务", "type": "diamond", "style": "filled", "fillColor": "lightgrey"},
+        {"id": "10", "label": "退出/返回", "type": "ellipse", "style": "filled", "fillColor": "lightblue"},
+        {"source": "1", "target": "2", "label": ""},
+        {"source": "2", "target": "3", "label": "点击“新增任务”"},
+        {"source": "2", "target": "4", "label": "点击任务"},
+        {"source": "2", "target": "5", "label": "点击“复盘”"},
+        {"source": "3", "target": "6", "label": "输入任务详情并保存"},
+        {"source": "6", "target": "2", "label": "返回任务列表"},
+        {"source": "4", "target": "7", "label": "编辑任务并保存"},
+        {"source": "4", "target": "8", "label": "标记完成"},
+        {"source": "7", "target": "2", "label": ""},
+        {"source": "8", "target": "2", "label": ""},
+        {"source": "2", "target": "9", "label": "左滑删除任务"},
+        {"source": "9", "target": "2", "label": ""},
+        {"source": "5", "target": "10", "label": "完成复盘"}
+    ]
+}
